@@ -59,4 +59,13 @@ public class FlightManagerTest {
         flight.bookPassenger(passenger);
         assertEquals(3.0, flightManager.calculateBaggageWeightBooked(flight), 0.0);
     }
+
+    @Test
+    public void canCheckHowMuchWeightRemains(){
+        flight.bookPassenger(passenger);
+        flight.bookPassenger(passenger);
+        flight.bookPassenger(passenger);
+        flight.bookPassenger(passenger);
+        assertEquals( 596.0, flightManager.howMuchWeightRemains(flight), 0.0);
+    }
 }

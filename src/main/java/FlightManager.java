@@ -11,4 +11,8 @@ public class FlightManager extends Plane{
     public double calculateBaggageWeightBooked(Flight flight){
         return flight.countPassengerList() * getBagWeightPerPassenger();
     }
+
+    public double howMuchWeightRemains(Flight flight){
+        return (getTotalWeightFromEnum() / 2.00) - calculateBaggageWeightBooked(flight);
+    }
 }
