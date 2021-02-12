@@ -25,4 +25,9 @@ public class CabinCrewMemberTest {
     public void cabinCrewMemberHasRank(){
         assertEquals(4, cabinCrewMember.getRankFromEnum());
     }
+
+    @Test
+    public void canRelayMessage(){
+        assertEquals("Welcome on board this flight", cabinCrewMember.relayMessage());
+    }
 }

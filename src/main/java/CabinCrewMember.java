@@ -19,6 +19,9 @@ public class CabinCrewMember {
         return this.rank.getRank();
     }
 
-    Rank[] ranks = Rank.values();
+//    Rank[] ranks = Rank.values();
 
+    public String relayMessage(){
+        return "Welcome on board this flight";
+    }
 }
