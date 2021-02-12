@@ -7,6 +7,7 @@ public class FlightTest {
     Flight flight;
     Plane plane;
     Pilot pilot;
+    Passenger passenger;
 
     @Before
     public void before(){
@@ -43,5 +44,16 @@ public class FlightTest {
     @Test
     public void hasPilot(){
         assertEquals(pilot, flight.getPilot());
+    }
+
+    @Test
+    public void canGetNumberOfAvailableSeats(){
+        assertEquals(190, flight.getNumberOfAvailableSeats());
+    }
+
+    @Test
+    public void canBookPassenger() {
+        flight.bookPassenger(passenger);
+        assertEquals(1, flight.countPassengerList());
     }
 }

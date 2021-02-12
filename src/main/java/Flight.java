@@ -52,4 +52,16 @@ public class Flight {
     public int countPassengerList(){
         return this.passengerList.size();
     }
+
+    public int getNumberOfAvailableSeats() {
+        int planeSeats = this.plane.getCapacityFromEnum();
+        int numPassengers = countPassengerList();
+        return planeSeats - numPassengers;
+    }
+
+    public void bookPassenger(Passenger passenger){
+        if(getNumberOfAvailableSeats() > 1) {passengerList.add(passenger);
+        }
+    }
+
 }
