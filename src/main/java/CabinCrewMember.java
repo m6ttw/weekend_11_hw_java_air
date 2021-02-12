@@ -15,8 +15,8 @@ public class CabinCrewMember {
         return this.rank;
     }
 
-    public int getValueFromEnum(){
-        return this.rank.getValue();
+    public int getRankFromEnum(){
+        return this.rank.getRank();
     }
 
     Rank[] ranks = Rank.values();

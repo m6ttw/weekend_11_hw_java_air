@@ -17,14 +17,18 @@ public class Pilot{
         return this.rank;
     }
 
-    public int getValueFromEnum(){
-        return this.rank.getValue();
+    public int getRankFromEnum(){
+        return this.rank.getRank();
     }
 
-    Rank[] ranks = Rank.values();
+//    Rank[] ranks = Rank.values();
 
     public String getPilotLicenceNumber(){
         return this.pilotLicenceNumber;
+    }
+
+    public String flyPlane(){
+        return "Pilot is flying the plane";
     }
 
 }

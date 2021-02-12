@@ -23,11 +23,16 @@ public class PilotTest {
 
     @Test
     public void pilotHasRank(){
-        assertEquals(1, pilot.getValueFromEnum());
+        assertEquals(1, pilot.getRankFromEnum());
     }
 
     @Test
     public void pilotHasLicenceNumber(){
         assertEquals("ABC12345", pilot.getPilotLicenceNumber());
+    }
+
+    @Test
+    public void canFlyPlane(){
+        assertEquals("Pilot is flying the plane", pilot.flyPlane());
     }
 }

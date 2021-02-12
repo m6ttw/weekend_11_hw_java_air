@@ -23,6 +23,6 @@ public class CabinCrewMemberTest {
 
     @Test
     public void cabinCrewMemberHasRank(){
-        assertEquals(4, cabinCrewMember.getValueFromEnum());
+        assertEquals(4, cabinCrewMember.getRankFromEnum());
     }
 }
