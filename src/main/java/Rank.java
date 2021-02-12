@@ -1,8 +1,8 @@
 public enum Rank {
     CAPTAIN(1),
-    FIRSTOFFICER(2),
+    CO_PILOT(2),
     PURSER(3),
-    FLIGHTATTENDANT(4);
+    FLIGHT_ATTENDANT(4);
 
     private final int rank;
 
