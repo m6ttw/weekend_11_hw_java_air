@@ -29,7 +29,7 @@ public class Plane {
         return this.capacity.getCapacity();
     }
 
-    public int getTotalWeightFromEnum(){
+    public double getTotalWeightFromEnum(){
         return this.totalWeight.getTotalWeight();
     }
 

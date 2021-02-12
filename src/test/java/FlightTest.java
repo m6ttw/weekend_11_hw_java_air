@@ -14,6 +14,7 @@ public class FlightTest {
         plane = new Plane(PlaneType.BOEING737, PlaneType.BOEING737, PlaneType.BOEING737);
         pilot = new Pilot("Chris", Rank.CAPTAIN, "ABC12345");
         flight = new Flight("FR756", "MAD", "BHX", "06:25", plane, pilot);
+        passenger = new Passenger("Bob", 1);
     }
 
     @Test
